@@ -18,3 +18,4 @@ import pandas as pd
 # Use pandas to read the data and print to the terminal
 data = pd.read_csv("weather_data.csv")
 print(data)
+print(data["temp"])
