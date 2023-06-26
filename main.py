@@ -6,11 +6,15 @@
 import csv
 import pandas as pd
 
-with open("weather_data.csv") as data_file:
-    data = csv.reader(data_file)
-    temperatures = []
-    for row in data:
-        if row[1] != "temp":
-            temperatures.append(int(row[1]))
+# with open("weather_data.csv") as data_file:
+#     data = csv.reader(data_file)
+#     temperatures = []
+#     for row in data:
+#         if row[1] != "temp":
+#             temperatures.append(int(row[1]))
 
-print(temperatures)
+# print(temperatures)
+
+# Use pandas to read the data and print to the terminal
+data = pd.read_csv("weather_data.csv")
+print(data)
