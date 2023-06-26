@@ -27,3 +27,7 @@ data_dict = data.to_dict()
 # Turn series data to a list
 temp_list = data["temp"].to_list()
 print(temp_list)
+
+# get average temps using pandas
+average_temps = data["temp"].mean()
+print(average_temps)
