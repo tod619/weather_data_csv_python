@@ -22,4 +22,8 @@ data = pd.read_csv("weather_data.csv")
 
 # Convert the data to a dictionary
 data_dict = data.to_dict()
-print(data_dict)
+# print(data_dict)
+
+# Turn series data to a list
+temp_list = data["temp"].to_list()
+print(temp_list)
