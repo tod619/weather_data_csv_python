@@ -17,5 +17,9 @@ import pandas as pd
 
 # Use pandas to read the data and print to the terminal
 data = pd.read_csv("weather_data.csv")
-print(data)
-print(data["temp"])
+# print(data)
+# print(data["temp"])
+
+# Convert the data to a dictionary
+data_dict = data.to_dict()
+print(data_dict)
