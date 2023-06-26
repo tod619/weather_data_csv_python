@@ -31,3 +31,11 @@ print(temp_list)
 # get average temps using pandas
 average_temps = data["temp"].mean()
 print(average_temps)
+
+# work with rows
+
+# get the row on Monday
+print(data[data.day == "Monday"])
+
+# get the row with the max temp
+print(data[data.temp == data.temp.max()])
